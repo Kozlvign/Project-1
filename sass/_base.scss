@@ -11,6 +11,7 @@ Grey dark 2: #777
 Grey dark 3: #999
 
 */
+
 $--color-primary: #eb2f64;
 $--color-primary-light: #FF3366;
 $--color-primary-dark: #BA265D;
@@ -25,6 +26,10 @@ $--grey-dark-2: #777;
 $--grey-dark-3: #999;
 
 $--shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+$--shadow-light: 0 2rem 5rem rgba(10, 5, 5, 0.06);
+
+$--line: 1px solid $--grey-light-2;
+
 
 :root {
     --color-primary: #{$--color-primary};
@@ -41,6 +46,10 @@ $--shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
     --grey-dark-3: #{$--grey-dark-3};
 
     --shadow-dark: #{$--shadow-dark};
+    --shadow-light: #{$--shadow-light};
+
+    --line: #{$--line};
+
     
 }
 

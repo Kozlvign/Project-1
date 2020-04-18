@@ -199,7 +199,7 @@
 .overview {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid $--grey-light-2;
+    border-bottom: $--line;
 
 
     &__heading {
@@ -287,8 +287,8 @@
     }
 
     50% {
-        transform: scale(1.05);
-        box-shadow: 0 1rem 4rem rgba(0,0,0,.25);
+        transform: scale(1.10);
+        //box-shadow: 0 1rem 4rem rgba(0,0,0,.25);
     }
 
     100% {

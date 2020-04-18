@@ -26,7 +26,9 @@ Grey dark 3: #999
 
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none; }
 
 *,
 *::before
@@ -68,9 +70,13 @@ body {
 
 .sidebar {
   background-color: #333;
-  flex: 0 0 18%; }
+  display: flex;
+  flex: 0 0 18%;
+  flex-direction: column;
+  justify-content: space-between; }
 
 .hotel-view {
+  height: 80rem;
   flex: 1; }
 
 .logo {
@@ -148,3 +154,13 @@ body {
   .user-nav__user-photo {
     height: 3.75rem;
     border-radius: 50%; }
+
+.side-nav__icon {
+  width: 1.75rem;
+  height: 1.75rem; }
+
+.legal {
+  color: #ccc;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2.5rem; }

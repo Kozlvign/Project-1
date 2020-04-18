@@ -119,12 +119,19 @@
 ///////////////////////////////////////
 // SIDE NAVIGATION
 .side-nav {
+    font-size: 1.4rem;
+    margin-top: 3.5rem;
+
     &__item {
 
     }
 
-    &__link {
-
+    &__link:link,
+    &__link:visited {
+        color: $--grey-light-1;
+        text-transform: uppercase;
+        display: block;
+        padding: 1.5rem 3rem;
     }
 
     &__icon {

@@ -40,6 +40,9 @@ Grey dark 3: #999
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -57,6 +60,11 @@ body {
   background-color: #f4f2f2;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   min-height: 50rem; }
+  @media only screen and (max-width: 75em) {
+    .container {
+      margin: 0;
+      max-width: 100%;
+      width: 100%; } }
 
 .header {
   font-size: 1.4rem;
@@ -69,6 +77,9 @@ body {
 
 .content {
   display: flex; }
+  @media only screen and (max-width: 56.25em) {
+    .content {
+      flex-direction: column; } }
 
 .sidebar {
   background-color: #333;
@@ -180,6 +191,10 @@ body {
 .side-nav {
   font-size: 1.4rem;
   margin-top: 3.5rem; }
+  @media only screen and (max-width: 75em) {
+    .side-nav {
+      display: flex;
+      margin: 0; } }
   .side-nav__item {
     position: relative; }
     .side-nav__item:not(:last-child) {
@@ -219,6 +234,9 @@ body {
   font-size: 1.2rem;
   text-align: center;
   padding: 2.5rem; }
+  @media only screen and (max-width: 75em) {
+    .legal {
+      display: none; } }
 
 .gallery {
   display: flex; }
@@ -337,7 +355,7 @@ body {
     border: 3px solid #fff;
     border-radius: 50%; }
     .recommend__photo:not(:last-child) {
-      margin-right: -1.5rem; }
+      margin-right: -2rem; }
 
 .review {
   background-color: #fff;

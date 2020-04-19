@@ -122,6 +122,11 @@
     font-size: 1.4rem;
     margin-top: 3.5rem;
 
+    @media only screen and (max-width: $bp-largest) {
+        display: flex;
+        margin: 0;
+    }
+
     &__item {
         position: relative;
 
@@ -175,6 +180,7 @@
         fill: currentColor;
     }
 }
+
 ///////////////////////////////////////
 // LEGAL TEXT
 .legal {
@@ -182,7 +188,12 @@
     font-size: 1.2rem;
     text-align: center;
     padding: 2.5rem;
+
+    @media only screen and (max-width: $bp-largest) {
+        display: none;
+    }
 }
+
 ///////////////////////////////////////
 // GALLERY
 .gallery {
@@ -363,7 +374,7 @@
         border-radius: 50%;
 
         &:not(:last-child) {
-            margin-right: -1.5rem;
+            margin-right: -2rem;
         }
     }
 }

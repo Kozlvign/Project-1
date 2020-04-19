@@ -382,7 +382,6 @@
         margin-bottom: 2rem;
         position: relative;
         z-index: 10;
-
     }
 
     &__user {
@@ -429,5 +428,19 @@
         font-size: 20rem;
         font-family: sans-serif;
         color: $--grey-light-2;
+    }
+}
+
+///////////////////////////////////////
+// CALL TO ACTION
+.cta {
+    padding: 3.5rem 0;
+    text-align: center;
+
+    &__book-now {
+        font-size: 1.2rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 2.5rem;
     }
 }

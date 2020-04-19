@@ -229,6 +229,20 @@
 // GALLERY
 .gallery {
     display: flex;
+    overflow: hidden;
+
+    &__item {
+        opacity: 0.8;
+        transition: transform 0.5s, opacity 0.5s;
+        transform: scale(0.9);
+
+        &:hover {
+            opacity: 1;
+            -webkit-transform: scale(1.04);
+            transform: scale(1.04);
+        }
+    }
+
     &__photo {
         width: 100%;
         display: block;

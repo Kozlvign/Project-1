@@ -54,10 +54,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vw; }
-  @media only screen and (max-width: 68.75em) {
-    body {
-      font-size: 80%;
-      height: 100%; } }
 
 .container {
   max-width: 120rem;
@@ -288,7 +284,16 @@ body {
       display: none; } }
 
 .gallery {
-  display: flex; }
+  display: flex;
+  overflow: hidden; }
+  .gallery__item {
+    opacity: 0.8;
+    transition: transform 0.5s, opacity 0.5s;
+    transform: scale(0.9); }
+    .gallery__item:hover {
+      opacity: 1;
+      -webkit-transform: scale(1.04);
+      transform: scale(1.04); }
   .gallery__photo {
     width: 100%;
     display: block; }
